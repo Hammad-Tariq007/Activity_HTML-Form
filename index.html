@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact-form" id="contact-form">
+        <h2 class="heading">Complex <span>HTML</span> Form</h2>
+        <label for="FullName">Name:</label>
+        <input type="text" name="FullName" placeholder="Enter Your Name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter Your Password">
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="Your Age" min="1" max="120">
+        <br><br>
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" name="gender" id="gender"  value="Male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender"  value="Female">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="gender" value="Other">
+            <label for="gender">Other</label>
+        </fieldset>
+        <br><br>
+        <input type="checkbox" name="subs" id="subs">
+        <label for="subs">Subscribe to newsletter</label>
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">Select Your Country</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br><br>
+        <label for="bio">Biography</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10">Tell us about yourself...</textarea>
+        <br><br>
+        <label for="file">Upload a Profile Picture:</label>
+        <input type="file" name="file" id="file" placeholder="Choose File">
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" >
+        <br><br>
+        <label for="time">Appointment Time:</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="volume">Volume Level:</label>
+        <input type="range" min="1" max="100" name="volume" id="volume">
+        <br><br>
+        <label for="color">Favorite Color:</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+        
+      </section>
+</body>
+</html>
